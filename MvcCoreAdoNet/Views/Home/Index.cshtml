@@ -1,0 +1,25 @@
+﻿@section styles {
+    <style>
+        h2 {
+            background-color: yellow
+        }
+    </style>
+}
+
+<h2 style=" color: fuchsia">
+    Estás en casa
+</h2>
+<h1 id="indexTxt">Mensaje de la vista</h1>
+<button class="btn btn-info" id="botonIndex">
+    Boton Index
+</button>
+
+@section scripts {
+    <script>
+        $(document).ready(function(){
+            $("#botonIndex").click(function(){
+                $("#indexTxt").text("Botón pulsado en INDEX");
+            })
+        })
+    </script>
+}
