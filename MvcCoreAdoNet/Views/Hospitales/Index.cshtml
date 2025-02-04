@@ -10,6 +10,7 @@
 				<th>Telefono</th>
 				<th></th>
 				<th></th>
+				<th></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -18,9 +19,15 @@
 					<td>@hospital.Nombre</td>
 					<td>@hospital.Direccion</td>
 					<td>@hospital.Telefono</td>
-					<td>@Html.ActionLink("Details", "Details", "Hospitales", new { id = @hospital.IdHospital})</td>
-				<td>@Html.ActionLink("Edit", "Update", "Hospitales", new { id = @hospital.IdHospital })</td>
-				<td>@Html.ActionLink("Delete", "Delete", "Hospitales", new { id = hospital.IdHospital })</td>
+					<td>
+						@Html.ActionLink("Details", "Details", "Hospitales", new { id = @hospital.IdHospital})
+					</td>
+					<td>
+						@Html.ActionLink("Edit", "Update", "Hospitales", new { id = @hospital.IdHospital })
+					</td>
+					<td>
+						@Html.ActionLink("Delete", "Delete", "Hospitales", new { id = hospital.IdHospital })
+					</td>
 				</tr>
 			}
 		</tbody>

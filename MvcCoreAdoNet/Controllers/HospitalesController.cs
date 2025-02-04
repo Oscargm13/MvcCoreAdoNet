@@ -12,7 +12,6 @@ namespace MvcCoreAdoNet.Controllers
         {
             this.repo = new RepositoryHospital();
         }
-
         public IActionResult Index()
         {
             List<Hospital> hospitales = this.repo.GetHospitales();
@@ -34,7 +33,6 @@ namespace MvcCoreAdoNet.Controllers
             ViewData["MENSAJE"] = "Hospital insertado";
             return RedirectToAction("Index");
         }
-
         public IActionResult Update(int id)
         {
             Hospital hospital = this.repo.FindHospital(id);
